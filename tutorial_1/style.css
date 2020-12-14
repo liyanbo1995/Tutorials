@@ -1,10 +1,23 @@
-.card--Italy{
-    background-image: url(./assets/bg-2.png);
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.card{
     overflow: hidden;
-    height: 416px;
-    widows: 736px;
     background-repeat: no-repeat;
     margin: 20px;
+    position: relative;
+    width: 100%;
+    box-shadow: 5px 10px 5px 10px gray;
+
+}
+
+.card--Italy{
+    background-image: url(./assets/bg-2.png);
+    height: 416px;
+    width: 736px;
+    
+
 }
 
 .card__line{
@@ -12,11 +25,11 @@
     width: 112px;
     height: 80px;
     border-left: 5px solid #00FA9A;
-    position: absolute;
+    position: relative;
     /*margin: 270px 0px 60px 8px;*/
 
     top:300px;
-    left: 35px;
+    left: 8px;
     
 
 }
@@ -25,7 +38,7 @@
     position: absolute;
     color: white;
     top:302px;
-    left: 70px;
+    left: 50px;
     font-size: 48px;
     
     
@@ -36,27 +49,59 @@
     position: absolute;
     color: #00FA9A ;
     font-size:18px;
-    left: 70px;
+    left: 50px;
     top:280px;
 
 }
 
 .card__nation{
 
-    
-   
     background: white;
     background-clip: border-box; 
-    width: 70px;
-    height: 25px;
-    padding:5px 10px 5px 20px;
+    width: 60px;
+    padding:3px;
     border-radius: 5px;
     position: absolute;
-    left: 600px;
-    top: 50px;
-    font-size: 22px;
+    left:620px;
+    top:25px;
+    font-size: 15px;
     border-style: none;
-    color: teal;
+    color: blue;
+    text-align: center;
     
     
 }
+
+.card__bluebutton{
+  
+    right:30px;
+    bottom: 40px;
+  
+    color:white;
+    background: blue;
+    border-radius: 20px;
+    border-style:none ;
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    
+    
+   
+
+}
+
+.card__bluebutton:hover{
+
+    background-color:white;
+    color: black;
+
+}
+
+.card--Brano{
+
+    height: 400px;
+    width: 340px;
+}
+
+
+ 
