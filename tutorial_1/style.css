@@ -1,6 +1,13 @@
+body{
+
+  background-color: #efefef;
+}
 .flex-container{
     display: flex;
     flex-direction: row;
+    flex:1;
+    height: 700px;
+
 }
 .card{
     overflow: hidden;
@@ -8,7 +15,7 @@
     margin: 20px auto;
     position: relative;
     width: 100%;
-    box-shadow: 5px 10px 5px 10px gray;
+    
 
 }
 
@@ -98,52 +105,32 @@
 }
 
 .card--Brano{
-
-    height: 400px;
-    width: 340px;
+  
+ 
+    width: auto;
+    height: auto;
+    /*
     background-image: url(./assets/bg-6.png);
-    border-radius: 8px;
-    overflow: visible；
+    border-radius: 8px;*/
+    /*overflow: visible；*/
 }
 
 
   
 
-  
-  #heart::before, #heart::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    margin-left: 270px;
-    width: 20px;
-    height: 40px;
-    border-radius: 30px 30px 0 0;
-    background: white;
-  }
-  
-  #heart::before {
-    left: 20px;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-  }
-  
-  #heart::after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
-  }
+ 
 
 
 .card__information{
     position: absolute;
-    width: 280px;
+    width: 290px;
     height: 150px;
     background-color: white;
     border-radius: 10px;
-    left:30px;
+    left:25px;
     
-    bottom:-20px;
-    border-color: black;
+    top:275px;
+    border-style: none;
     
 
 }
@@ -188,7 +175,7 @@
 
   .card__reviews{
 
-    color: lightgrey;
+    color: silver;
     position: absolute;
     left:110px;
     top:6px;
@@ -204,11 +191,33 @@
     color:black
 
   }
+  
   .places{
     position: absolute;
     left:23px;
-    top:55px;
+    top:60px;
     font-size: 15px;
     
+  }
 
+  .card__price{
+    position: absolute;
+    color:black;
+    left:23px;
+    top:90px;
+    font-weight: bold;
+  }
+
+  .arrow{
+    background-color: blue;
+    border-radius: 35px;
+    height: 35px;
+    position: absolute;
+    right:20px;
+    top:90px;
+  }
+  .heart{
+    position: absolute;
+    right:20px;
+    top:20px;
   }
