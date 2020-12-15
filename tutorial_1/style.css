@@ -5,7 +5,7 @@
 .card{
     overflow: hidden;
     background-repeat: no-repeat;
-    margin: 20px;
+    margin: 20px auto;
     position: relative;
     width: 100%;
     box-shadow: 5px 10px 5px 10px gray;
@@ -101,9 +101,114 @@
 
     height: 400px;
     width: 340px;
-   
+    background-image: url(./assets/bg-6.png);
+    border-radius: 8px;
+    overflow: visible；
 }
 
 
+  
 
- 
+  
+  #heart::before, #heart::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    margin-left: 270px;
+    width: 20px;
+    height: 40px;
+    border-radius: 30px 30px 0 0;
+    background: white;
+  }
+  
+  #heart::before {
+    left: 20px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  #heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+
+.card__information{
+    position: absolute;
+    width: 280px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    left:30px;
+    
+    bottom:-20px;
+    border-color: black;
+    
+
+}
+
+.rating { 
+    position:absolute;
+    border: none;
+    top:10px;
+    left:10px;
+  }
+  
+  .rating > input { display: none; } 
+  .rating > label:before { 
+    margin: 1px;
+    font-size: 0.9em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+  
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+  
+  .rating > label { 
+    color: #ddd; 
+   float: right; 
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+  .card__reviews{
+
+    color: lightgrey;
+    position: absolute;
+    left:110px;
+    top:6px;
+    font-size: 12px;
+  }
+
+  .card__title1{
+
+    position: absolute;
+    left:21px;
+    top:15px;
+    font-size: 25px;
+    color:black
+
+  }
+  .places{
+    position: absolute;
+    left:23px;
+    top:55px;
+    font-size: 15px;
+    
+
+  }
