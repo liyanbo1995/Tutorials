@@ -5,17 +5,19 @@ body{
 }
 .flex-container{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     flex:1;
-    height: 700px;
+    height:2000px;
+    flex-wrap: wrap;
 
 }
 .card{
     overflow: hidden;
     background-repeat: no-repeat;
-    margin:20px auto;
+    margin:20px;
     position: relative;
     width: 100%;
+    border-radius: 5px;
     
     
 
@@ -110,9 +112,9 @@ body{
 
 .card--Brano{
   
- 
+
     width: auto;
-    height: auto;
+    height: 600px;
     /*
     background-image: url(./assets/bg-6.png);
     border-radius: 8px;*/
@@ -224,4 +226,56 @@ body{
     position: absolute;
     right:20px;
     top:20px;
+  }
+
+  .card-image{
+   
+    box-shadow: 5px  #888888;
+  }
+ 
+  .card__nation2{
+    color:white;
+    background-color: red;
+    top:10px;
+    left: 250px;
+  
+  }
+
+  .card__information2{
+    position: absolute;
+    width: 340px;
+    height: 255px;
+    background-color: white;
+    /*border-radius: 10px;*/
+    left:0px;
+    
+    top:170px;
+    border-style: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 20px 5px lightgray;
+
+  }
+
+  .card__title2{
+
+    top:0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+  }
+  .card__textfadeout{
+    position:absolute;
+    top:60px;
+    color: silver;
+    left: 22px;
+    font-size: 18px;
+    line-height: 25px;
+    -webkit-mask-image: -webkit-gradient(linear, left top, 
+      left bottom, from(rgba(0,0,0,2)), to(rgba(0,0,0,0)))
+    ;
+  }
+
+  .card__bluebutton_2{
+    top: 145px;
+    left: 102px;
   }
