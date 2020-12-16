@@ -1,36 +1,30 @@
-
 body{
   width: 100%;
   background-color: #efefef;
 }
+
 .flex-container{
     display: flex;
     flex-direction:row;
     width: auto;
-    justify-content:space-evenly;
+    justify-content:space-evenly;/*横向排列距离相等*/
     height:auto;
    
+  }
 
-}
 .card{
     overflow: hidden;
     background-repeat: no-repeat;
     margin:50px;
     position: relative;
-  
     border-radius: 5px;
-    
-    
-
 }
-
+/*design on 1st card*/
 .card--Italy{
     background-image: url(./assets/bg-2.png);
     height: 416px;
     width: 736px;
     margin: auto;
-    
-
 }
 
 .card__line{
@@ -112,6 +106,8 @@ body{
 
 }
 
+
+/*Design on second card design*/
 .card--Brano{
   
 
@@ -123,12 +119,6 @@ body{
     /*overflow: visible；*/
 }
 
-
-  
-
- 
-
-
 .card__information{
     position: absolute;
     width: 290px;
@@ -136,12 +126,9 @@ body{
     background-color: white;
     border-radius: 10px;
     left:25px;
-    
     top:275px;
     border-style: none;
-    
-
-}
+  }
 
 .rating { 
     position:absolute;
@@ -190,7 +177,7 @@ body{
     font-size: 12px;
   }
 
-  .card__title1{
+  .card__title-first{
 
     position: absolute;
     left:21px;
@@ -235,7 +222,7 @@ body{
     box-shadow: 5px  #888888;
   }
  
-  .card__nation2{
+  .card__nation--second{
     color:white;
     background-color: red;
     top:10px;
@@ -243,7 +230,7 @@ body{
   
   }
 
-  .card__information2{
+  .card__information--second{
     position: absolute;
     width: 340px;
     height: 255px;
@@ -259,7 +246,7 @@ body{
 
   }
 
-  .card__title2{
+  .card__title--second{
 
     top:0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -277,19 +264,22 @@ body{
     ;
   }
 
-  .card__bluebutton_2{
+  .card__bluebutton--second{
     top: 145px;
     left: 102px;
   }
 
-  .card--Italy3{
+
+  /*Design on third card*/
+
+  .card--Italy--third{
     background-image: url(./assets/bg-5.png);
     width: 340px;
     height: 245px;
     position: relative;
   }
 
-  .card__nation3{
+  .card__nation--third{
    
     top:12px;
     left: 30px;
@@ -305,7 +295,7 @@ body{
     text-align: center;
   }
 
-  .card__title3{
+  .card__title--third{
     position:absolute;
     top:90px;
     left: 30px;
@@ -319,7 +309,7 @@ body{
     left:32px
   }
 
-  .card__button3{
+  .card__button--third{
     top:170px;
     left: 40px;
     font-size: 18px;
