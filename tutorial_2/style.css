@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@media only screen and (max-width: 12.5em) {
+  .card {
+    width: auto;
+    height: auto;
+  }
+}
+
+body {
+  background-color: #efefef;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  /*横向排列距离相等*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px;
+  /*first card*/
+  /*Design on third card*/
+}
+
+.flex-container .card {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin: 50px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.flex-container .card--Brano {
+  width: auto;
+  height: 430px;
+}
+
+.flex-container .card--Brano .heart {
+  position: absolute;
+  left: 280px;
+  top: 20px;
+}
+
+.flex-container .card--Brano .card-image {
+  -webkit-box-shadow: 5px  #888888;
+          box-shadow: 5px  #888888;
+}
+
+.flex-container .card--Brano .card__information {
+  position: absolute;
+  width: 290px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  left: 25px;
+  top: 275px;
+  border-style: none;
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  /* hover previous stars in list */
+}
+
+.flex-container .card--Brano .card__information .rating {
+  position: absolute;
+  border: none;
+  top: 10px;
+  left: 10px;
+}
+
+.flex-container .card--Brano .card__information .rating > input {
+  display: none;
+}
+
+.flex-container .card--Brano .card__information .rating > label:before {
+  margin: 1px;
+  font-size: 0.9em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.flex-container .card--Brano .card__information .rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.flex-container .card--Brano .card__information .rating > label {
+  color: #ddd;
+  float: right;
+}
+
+.flex-container .card--Brano .card__information .rating > input:checked ~ label,
+.flex-container .card--Brano .card__information .rating:not(:checked) > label:hover,
+.flex-container .card--Brano .card__information .rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+
+.flex-container .card--Brano .card__information .rating > input:checked + label:hover,
+.flex-container .card--Brano .card__information .rating > input:checked ~ label:hover,
+.flex-container .card--Brano .card__information .rating > label:hover ~ input:checked ~ label,
+.flex-container .card--Brano .card__information .rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+
+.flex-container .card--Brano .card__reviews {
+  color: silver;
+  position: absolute;
+  left: 110px;
+  top: 6px;
+  font-size: 12px;
+}
+
+.flex-container .card--Brano .card__title-first {
+  position: absolute;
+  left: 21px;
+  top: 15px;
+  font-size: 25px;
+  color: black;
+}
+
+.flex-container .card--Brano .places {
+  position: absolute;
+  left: 23px;
+  top: 60px;
+  font-size: 15px;
+}
+
+.flex-container .card--Brano .card__price {
+  position: absolute;
+  color: black;
+  left: 23px;
+  top: 90px;
+  font-weight: bold;
+}
+
+.flex-container .card--Brano .arrow {
+  background-color: blue;
+  border-radius: 35px;
+  height: 35px;
+  position: absolute;
+  right: 20px;
+  top: 90px;
+}
+
+.flex-container .card__title-first {
+  position: absolute;
+  left: 21px;
+  top: 15px;
+  font-size: 25px;
+  color: black;
+}
+
+.flex-container .card__nation--second {
+  color: white;
+  background-color: red;
+  top: 10px;
+  left: 250px;
+}
+
+.flex-container .card__information--second {
+  position: absolute;
+  width: 340px;
+  height: 255px;
+  background-color: white;
+  /*border-radius: 10px;*/
+  left: 0px;
+  top: 170px;
+  border-style: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 5px 5px 20px 5px lightgray;
+          box-shadow: 5px 5px 20px 5px lightgray;
+}
+
+.flex-container .card__title--second {
+  top: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+}
+
+.flex-container .card__textfadeout {
+  position: absolute;
+  top: 60px;
+  color: silver;
+  left: 22px;
+  font-size: 18px;
+  line-height: 25px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+}
+
+.flex-container .card__bluebutton--second {
+  top: 145px;
+  left: 102px;
+}
+
+.flex-container .card--Italy--second {
+  width: 340px;
+  height: 430px;
+  position: relative;
+}
+
+.flex-container .card--Italy--third {
+  background-image: url(./assets/bg-5.png);
+  width: 340px;
+  height: 245px;
+  position: relative;
+}
+
+.flex-container .card__nation--third {
+  top: 12px;
+  left: 30px;
+  background: dodgerblue;
+  background-clip: border-box;
+  width: 80px;
+  padding: 3px;
+  border-radius: 3px;
+  position: absolute;
+  font-size: 15px;
+  border-style: none;
+  color: white;
+  text-align: center;
+}
+
+.flex-container .card__title--third {
+  position: absolute;
+  top: 90px;
+  left: 30px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+}
+
+.flex-container .card__subtitle {
+  top: 130px;
+  left: 32px;
+}
+
+.flex-container .card__button--third {
+  top: 170px;
+  left: 40px;
+  font-size: 18px;
+}
+
+.flex-container .card__arrow {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 135px;
+  bottom: 32px;
+}
+
+.flex-container .card__dotlist {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.flex-container .card__bluebutton {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+  color: white;
+  background: blue;
+  border-radius: 20px;
+  border-style: none;
+  width: 120px;
+  height: 40px;
+}
+
+.flex-container .card__bluebutton:hover {
+  background-color: white;
+  color: black;
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+}
+/*# sourceMappingURL=style.css.map */
