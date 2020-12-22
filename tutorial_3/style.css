@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(0, 0%, 94%);
+}
+
+body .calculator-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+  -ms-grid-columns: (120px)[4];
+      grid-template-columns: repeat(4, 120px);
+  -ms-grid-rows: minmax(120px, auto) (85px)[5];
+      grid-template-rows: minmax(120px, auto) repeat(5, 85px);
+}
+
+body .calculator-grid button {
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  background-color: dimgrey;
+}
+
+body .calculator-grid button:hover {
+  background-color: white;
+  color: black;
+}
+
+body .calculator-grid .calculator-grid_deleteAll {
+  background-color: red;
+}
+
+body .calculator-grid .calculator-grid_equal, body .calculator-grid .calculator-grid_delete {
+  background-color: deepskyblue;
+}
+
+body .calculator-grid .operation {
+  background-color: gold;
+}
+
+body .calculator-grid .span-two {
+  grid-column: span 2;
+}
+
+body .calculator-grid .output {
+  grid-column: 1 / -1;
+  color: white;
+  font-size: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/*# sourceMappingURL=style.css.map */
