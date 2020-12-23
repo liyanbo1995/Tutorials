@@ -8,7 +8,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: hsl(0, 0%, 94%);
+  background-color: #efefef;
 }
 
 body .calculator-grid {
@@ -58,6 +58,7 @@ body .calculator-grid .span-two {
 
 body .calculator-grid .output {
   grid-column: 1 / -1;
+  background-color: black;
   color: white;
   font-size: 4em;
   display: -webkit-box;
